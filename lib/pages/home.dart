@@ -1,3 +1,4 @@
+import 'dart:developer';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -8,7 +9,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: const Text('Pilgrim'),
+        title: const Text('TL;DR'),
       ),
       body: Center(
         child: ListView(
@@ -88,14 +89,14 @@ class HomePage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     TextButton(
-                      onPressed: () => print('This is Login.'),
+                      onPressed: () => log('This is Login Btn'),
                       child: const Text(
                         "Login",
                         style: TextStyle(color: Colors.red),
                       ),
                     ),
                     TextButton(
-                      onPressed: () => print('This is Register.'),
+                      onPressed: () => log('This is Register Btn'),
                       child: const Text(
                         "Register",
                         style: TextStyle(color: Colors.red),
