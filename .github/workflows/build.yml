@@ -69,6 +69,12 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
+      - name: Setup Flutter ${{ matrix.flutter-version }}
+        id: flutter
+        if: "!startsWith(matrix.bot, 'dart')"
+        uses: DanTup/gh-actions/setup-flutter@master
+        with:
+          channel: ${{ matrix.flutter-version }}
       - name: ⬇️ Checkout repository
         uses: actions/checkout@v3
       - name: ⚙️ Setup Flutter
