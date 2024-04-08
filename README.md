@@ -1,4 +1,6 @@
-# myapp
+[![Flutter](https://github.com/I3ushido/flutter-101/actions/workflows/dart.yml/badge.svg?branch=main)](https://github.com/I3ushido/flutter-101/actions/workflows/dart.yml)
+
+# flutter-101
 
 A new Flutter project.
 
